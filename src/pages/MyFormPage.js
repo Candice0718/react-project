@@ -37,12 +37,12 @@ export default class MyFormPage extends Component {
           {
             show && (
               <Field name="username" rules={[nameRules]}>
-                <textarea type="text" placeholder="input username" value=""/>
+                <input type="text" placeholder="input username"/>
               </Field>
             )
           }
           <Field name="password" rules={[passwordRules]}>
-            <textarea type="text" placeholder="input password" value=""/>
+            <input type="text" placeholder="input password"/>
           </Field>
           <button type="sumbit">sumbit</button>
         </Form>

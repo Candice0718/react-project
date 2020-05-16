@@ -1,9 +1,10 @@
 
 import React, { Component } from 'react'
-// import ReduxPage from './pages/ReduxPage'
-import ContextPage from './pages/ContextPage'
-import AntdFormPage from './pages/AntdFormPage'
+import ReduxPage from './pages/ReduxPage'
+// import ContextPage from './pages/ContextPage'
+// import AntdFormPage from './pages/AntdFormPage'
 import MyFormPage from './pages/MyFormPage'
+import HocPage from './pages/HocPage'
 
 class App extends Component {
 
@@ -12,7 +13,9 @@ class App extends Component {
       <div className="App">
         {/* <ContextPage/> */}
         {/* <AntdFormPage/> */}
-        <MyFormPage/>
+        {/* <MyFormPage/> */}
+        {/* <ReduxPage/> */}
+        <HocPage/>
       </div>
     )
   }

@@ -1,4 +1,4 @@
-const { override, fixBabelImports, addLessLoader } = require('customize-cra');
+const { override, fixBabelImports, addLessLoader, addDecoratorsLegacy } = require('customize-cra');
 
 module.exports = override(
   fixBabelImports("import", { // antd按需加载
@@ -12,5 +12,6 @@ module.exports = override(
       "@primary-color": "red",
       "@link-color": "orange"
     }
-  })
+  }),
+  addDecoratorsLegacy()//配置装饰器器
 );
