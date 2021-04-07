@@ -6,6 +6,7 @@ import ReduxPage from './pages/ReduxPage'
 import MyFormPage from './pages/MyFormPage'
 import HocPage from './pages/HocPage'
 import ModalPage from './pages/ModalPage'
+import Example from './pages/Example'
 
 class App extends Component {
 
@@ -17,7 +18,8 @@ class App extends Component {
         {/* <MyFormPage/> */}
         {/* <HocPage/> */}
         {/* <ModalPage/> */}
-        <ReduxPage/>
+        {/* <ReduxPage/> */}
+        <Example/>
       </div>
     )
   }
