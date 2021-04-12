@@ -11,6 +11,10 @@ import ReactReduxComponent from './ReactReduxPage.js';
 import store from './store/index.js';
 import { Provider } from 'react-redux';
 import App from './AppRoute.js';
+import PureComponent from './PureComponent.js';
+import Hook from './HookPage';
+import DialogPage from './DialogPage.js';
+import Hoc from './HOC.js'
 
 
 /**
@@ -67,7 +71,7 @@ const components = (
 //         <ReactReduxComponent></ReactReduxComponent>
 //     </Provider>, document.getElementById('root'));
 ReactDom.render( <Provider store={store}>
-    <App></App>
+    <Hoc></Hoc>
 </Provider>, document.getElementById('root'));
 
 // store.subscribe(() => {

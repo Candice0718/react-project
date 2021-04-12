@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Link, Switch, useRouteMatch } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Link, Switch, useRouteMatch, Redirect } from 'react-router-dom';
 import homePage from './homePage.js';
 import userPage from './userPage';
 
@@ -34,6 +34,7 @@ export default class App extends React.Component {
                         {/* 根路由需要添加exact，实现精确匹配 */}
                         <Route exact path="/" component={ homePage }></Route>
                         <Route path="/user" component={ userPage }></Route>
+                        <Redirect from="/haha" to="/user"></Redirect>
                         <Route render={() => <div>404</div>}></Route>
                     </Switch>
                 </Router>

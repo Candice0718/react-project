@@ -2,3 +2,15 @@
     width: 200px;
     height: 200px;
 }
+.dialog {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    z-index: 5;
+    width: 300px;
+    height: 300px;
+    border: 1px solid #e0e0e0;
+}

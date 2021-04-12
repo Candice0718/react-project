@@ -1,6 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
 
+
 export default connect(
     // 将state映射到props
     state => ({ counter: state }),
