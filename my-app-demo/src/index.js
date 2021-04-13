@@ -14,7 +14,8 @@ import App from './AppRoute.js';
 import PureComponent from './PureComponent.js';
 import Hook from './HookPage';
 import DialogPage from './DialogPage.js';
-import Hoc from './HOC.js'
+import Hoc from './HOC.js';
+import Form from './Form.js';
 
 
 /**
@@ -71,7 +72,7 @@ const components = (
 //         <ReactReduxComponent></ReactReduxComponent>
 //     </Provider>, document.getElementById('root'));
 ReactDom.render( <Provider store={store}>
-    <Hoc></Hoc>
+    <Form></Form>
 </Provider>, document.getElementById('root'));
 
 // store.subscribe(() => {
